@@ -37,6 +37,11 @@ public class ArrayListReview {
             System.out.println(doubleArrayList.get(i));
         }
         
+        //for each statement
+        for (double y : doubleArrayList){
+            System.out.println(y);
+        }
+        
         
         System.out.println("doubleArraList: "+ doubleArrayList);
         
