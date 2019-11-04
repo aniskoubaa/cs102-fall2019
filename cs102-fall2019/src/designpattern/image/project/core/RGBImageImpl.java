@@ -2,7 +2,8 @@ package designpattern.image.project.core;
 
 
 import designpattern.image.project.interfaces.Pixel;
-public class RGBImageImpl extends ImageImpl {
+import designpattern.image.project.interfaces.RGBImage;
+public class RGBImageImpl extends ImageImpl implements RGBImage{
     
     private Pixel [][]  img ;
     

@@ -1,9 +1,10 @@
 package designpattern.image.project.core;
 
 
+import designpattern.image.project.interfaces.GrayImage;
 import designpattern.image.project.interfaces.Pixel;
 
-public class GrayImageImpl extends ImageImpl{
+public class GrayImageImpl extends ImageImpl implements GrayImage{
 
     private Pixel [][]  img ;
     

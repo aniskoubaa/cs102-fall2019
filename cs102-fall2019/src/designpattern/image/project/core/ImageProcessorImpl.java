@@ -29,10 +29,10 @@ import designpattern.image.project.interfaces.RGBColor;
 import designpattern.image.project.interfaces.RGBImage;
 
 
-public class ImageProcessorImpl <I extends Image> implements ImageProcessor<Image>{
+public class ImageProcessorImpl <I extends Image> implements ImageProcessor<I>{
 
     @Override
-    public boolean imwrite(Image image, String filename) {
+    public boolean imwrite(I image, String filename) {
         
         
         if (image instanceof GrayImage){
@@ -82,7 +82,7 @@ public class ImageProcessorImpl <I extends Image> implements ImageProcessor<Imag
     }
 
     @Override
-    public int numberOfWhitePixels(Image image) {
+    public int numberOfWhitePixels(I image) {
         
         int counter = 0;
         if (image instanceof GrayImage){
