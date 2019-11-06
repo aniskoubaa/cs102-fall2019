@@ -33,7 +33,13 @@ public class PerformanceTest2 {
         t1=System.currentTimeMillis();
         System.out.println("duration LinkedList Add: "+ (t1-t0));
         
+        
+        
+        
+        
         /********** using List Iterator ***************/
+        
+        System.out.println("using List Iterator");
     System.out.println(" ");
     t0= System.currentTimeMillis();
 
@@ -55,54 +61,6 @@ public class PerformanceTest2 {
     t1=System.currentTimeMillis();
     System.out.println("duration LinkedList Iterator: "+ (t1-t0));
         
-        
-    
-    /* adding an element in the begining of the list */
-        System.out.println("adding an element at the begining of the list");
-        //case of ArrayList
-        t0= System.currentTimeMillis();
-        System.out.println(" ");
-        for (int i=0; i<numberOfElement; i++){
-            arrayList.add(0,"x="+i);
-        }
-        t1=System.currentTimeMillis();
-        System.out.println("duration ArrayList Add Head: "+ (t1-t0));
-        t0= System.currentTimeMillis();
-        
-        for (int i=0; i<numberOfElement; i++){
-            linkedList.add(0,"x="+i);
-        }
-        System.out.println("duration LinkedList Add Head: "+ (System.currentTimeMillis()-t0));
-        
-        
-        /* getting an element from the list */
-        System.out.println("getting an element from the list");
-        t0= System.currentTimeMillis();
-        int i=0;
-        while (i<arrayList.size()){
-            String st = arrayList.get(i);
-             //arrayList.set(i, st);    
-             i++;
-         }
-        t1=System.currentTimeMillis();
-        System.out.println("arrayList.size()= "+arrayList.size());
-        System.out.println("duration arrayList get(i): "+ (t1-t0));
-
-        t0= System.currentTimeMillis();
-        i=0;
-        while (i<linkedList.size()){
-              String st = linkedList.get(i);
-             //linkedList.set(i, st);    
-             i++;
-         }
-        t1=System.currentTimeMillis();
-        System.out.println("linkedList.size()= "+linkedList.size());
-        System.out.println("duration linkedList get(i): "+ (t1-t0));  
-    
-    
-    
-    
-    
     
     }    
 }

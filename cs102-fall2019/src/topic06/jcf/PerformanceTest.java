@@ -42,8 +42,6 @@ public class PerformanceTest {
         
         
         
-        
-        
     /********** using List Iterator ***************/
         
         System.out.println("using List Iterator");
