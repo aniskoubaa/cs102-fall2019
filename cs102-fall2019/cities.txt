@@ -1,0 +1,4 @@
+Jeddah;21.2854, 39.2376, 1.0;Saudi Arabia
+Makkah;21.3891, 39.8579, 1.0;Saudi Arabia
+Madinah;24.5247, 39.5692, 1.0;Saudi Arabia
+Riyadh;24.7136, 46.6753, 1.0;Saudi Arabia
